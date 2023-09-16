@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Righteous&display=swap');
+
+:root {
+    --primary-color: #3C362A;
+    --secondary-color: #2F7373;
+    --accent1-color: #E5F9E0;
+    --accent2-color: #40C9A2; 
+
+    --heading-font: Righteous;
+    --paragraph-font: Kalam;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+
+    background: var(--accent1-color);
+    align-items: center;
+    
+    font-family: var(--paragraph-font), "Lucida Sans Typewriter", monospace;
+}
+
+header, footer {
+    background: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+h2 {
+    padding: 10px;
+    color: var(--primary-color); 
+    font-family: var(--heading-font), "Lucida Sans Typewriter", monospace;
+}
+
+section {
+    background-color: var(--secondary-color);
+    color:var(--accent1-color);
+
+    font-family: var(--heading-font), "Lucida Sans Typewriter", monospace;
+  
+    padding: 1rem;
+}
+
+
+header, footer, nav, main{
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+header {
+    padding: 1em;
+}
+
+
+h1 {
+    display: inline;
+    margin: 0 auto;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+img {
+    border-radius: 15px;
+}
