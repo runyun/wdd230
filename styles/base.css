@@ -27,6 +27,7 @@ main {
     gap: 10px;
     max-width: 1800px;
     justify-items: stretch;
+    margin: auto;
 }
 
 header, footer {
