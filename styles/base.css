@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #3C362A;
-    --secondary-color: #2F7373;
+    --secondary-color: #1F490C;
     --accent1-color: #E5F9E0;
     --accent2-color: #40C9A2; 
 
@@ -23,10 +23,10 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     max-width: 1800px;
-    justify-items: stretch;
+    /* justify-items: stretch; */
     margin: auto;
 }
 
@@ -52,7 +52,6 @@ section {
 
 
 h2, section {
-    grid-column: 1 / 4;
     text-align: center;
 }
 
