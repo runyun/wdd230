@@ -1,0 +1,9 @@
+@media screen and (min-width: 1000px){
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+
+    .card:last-child {
+        grid-column: auto;
+    }
+}
