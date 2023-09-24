@@ -25,7 +25,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 1800px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -80,10 +80,15 @@ img {
     border-radius: 15px;
 }
 
+.card {
+    line-height: 2rem;
+    text-align: left;
+}
+
 .card p {
     font-family: var(--paragraph-font), "Lucida Sans Typewriter", monospace;
 }
 
-.card ul {
-    list-style: none;
+.card a {
+    color:var(--accent1-color);
 }
