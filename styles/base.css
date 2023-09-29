@@ -58,7 +58,7 @@ h1 {
 }
 
 nav a {
-    display: block;
+    display: none;
     text-decoration: none;
     padding: 10px;
     color: black;
@@ -100,10 +100,6 @@ img {
 
 #menu::before {
 	content: "≡";
-}
-
-nav a {
-    display: none;
 }
 
 .show a {
