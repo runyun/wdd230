@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Righteous&display=swap');
-
 :root {
     --primary-color: #3C362A;
     --secondary-color: #1F490C;
@@ -25,13 +23,13 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 800px;
     margin: auto;
 }
 
 header, footer {
     background: var(--primary-color);
     color: var(--accent1-color);
+    padding: 1rem;
 }
 
 h2 {
@@ -47,11 +45,6 @@ section {
     font-family: var(--heading-font), "Lucida Sans Typewriter", monospace;
   
     padding: 1rem;
-}
-
-
-h2, section {
-    text-align: center;
 }
 
 header {
@@ -91,4 +84,46 @@ img {
 
 .card a {
     color:var(--accent1-color);
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+    position:absolute;
+    right:0px;
+    top:0px;
+    color:var(--accent1-color);
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav a {
+    display: none;
+}
+
+.show a {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+iframe {
+    width: 90%;
+    border-radius: 15px;
+}
+
+main, iframe {
+    margin: 1rem 3px;
+    max-width: 850px;
+}
+
+img {
+    max-width: 50%;
 }
