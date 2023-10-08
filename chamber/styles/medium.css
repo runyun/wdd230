@@ -1,13 +1,23 @@
 
 @media screen and (min-width: 600px){
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
 
     #menu{
         display: none;
     }
 
-    nav {
+    /* nav a{
         display: flex;
+    } */
+    nav, nav.show {
+        display: flex;
+        justify-content: right;
     }
+
+    
+
 
     #develop-info {
         display: flex;
