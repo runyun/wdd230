@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+body {
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+p {
+    font-size: 2rem;
+    padding:1rem;
+}
+
+#bad {
+    background-color: #619A9F;
+    color: red;
+}
+
+#medium {
+    background-color: #619A9F;
+    color: #FFFCF5;
+}
+
+#good {
+    background-color: #619A9F;
+    color:black;
+}
+
