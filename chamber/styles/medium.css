@@ -1,23 +1,18 @@
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 720px){
     header {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 100px;
+        align-items: center;
     }
 
     #menu{
         display: none;
     }
 
-    /* nav a{
-        display: flex;
-    } */
     nav, nav.show {
         display: flex;
         justify-content: right;
     }
-
-    
-
 
     #develop-info {
         display: flex;
@@ -31,4 +26,7 @@
         margin: 1rem;
     }
 
+    #dark-mode-switch {
+        position: initial;
+    }
 }
