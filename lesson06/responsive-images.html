@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Yun Liu">
+    <meta name="description" content="Practice responsive images usage">
+    <title>Responsive images</title>
+
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Photo of Taipei Temple in different sizes accroding to web width" width="1500px" height="750px">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>
