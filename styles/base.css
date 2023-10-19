@@ -36,6 +36,7 @@ h2 {
     padding: 10px;
     color: var(--primary-color); 
     font-family: var(--heading-font), "Lucida Sans Typewriter", monospace;
+    grid-column: 1/3;
 }
 
 section {
@@ -45,6 +46,8 @@ section {
     font-family: var(--heading-font), "Lucida Sans Typewriter", monospace;
   
     padding: 1rem;
+    margin:1rem;
+    grid-column: 1/3;
 }
 
 header {
@@ -113,13 +116,40 @@ img {
 iframe {
     width: 90%;
     border-radius: 15px;
-}
-
-main, iframe {
     margin: 1rem 3px;
     max-width: 850px;
 }
 
-img {
-    max-width: 50%;
+header img {
+    width: 200px;
+    height: auto;
+}
+
+picture img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+}
+
+.herolabel {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+    border-radius: 5px;
+	padding: 1rem;
+	box-shadow: 0 0 1rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.hero {
+    position:relative;
+    grid-column: 1/3;
 }

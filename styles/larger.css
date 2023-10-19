@@ -18,7 +18,23 @@
         grid-column: 1 / 3;
     }
 
+    section {
+        grid-column: initial;
+    }
+
     #menu {
         display: none;
+    }
+
+    picture img {
+        max-height: none;
+    }
+    
+    .herolabel {
+        top: 30px;
+        left: 100px;
+    }
+    .herolabel p {
+        font-size: 2rem;
     }
 }
