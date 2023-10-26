@@ -78,7 +78,7 @@ header a {
     grid-column: 1/3;
 }
 
-#events hr {
+#events hr, #side hr{
     border-top: 0.1px dashed var(--primary-color);
 }
 
@@ -96,12 +96,11 @@ header a {
     color: white;
 }
 
-#business-spotlight section, #events section{
+section:not(#dark-mode-switch, #weather){
     margin: 50px;
     border: 1px solid var(--primary-color);
     border-radius: 1rem;
-} 
-
+}
 
 #location-info {
     display: grid;
@@ -236,3 +235,30 @@ border-radius: 34px;
 border-radius: 50%;
 }
 
+/* discover page */
+#discover-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+figure {
+    margin: 3rem auto;
+}
+
+figure:hover {
+    transform: rotate(.01turn);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+#side ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#side ul > li {
+    padding: 0.5rem;
+}

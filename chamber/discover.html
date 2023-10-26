@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Yun Liu">
+    <meta name="description" content="The Discover Page introduces basic information about Chuanghua with beautiful tourist spot pictures.">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="Chuanghua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tourism.chcg.gov.tw/upload/CuteSoft/chcgMap.png">
+    <meta property="og:url" content="https://runyun.github.io/wdd230/">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <title>Chuanghua Chamber of Commerce</title>
+
+</head>
+<body>
+    <header>
+        <h1>Changhua Chamber of Commerce</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+        </nav>
+        <section id="dark-mode-switch">
+            <h6>Dark Mode</h6>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </section>
+    </header>
+    <main id="discover-main">
+        <!-- all pictures are from the website https://tourism.chcg.gov.tw/ -->
+        <div id="side">
+            <section>
+                <h2>Hello!</h2>
+                <hr>
+                <p id="welcoming"></p>
+            </section>
+            <section>
+                <h2>Population</h2>
+                <hr>
+                <p>1,240,000</p>
+                <p>The biggest county in Taiwan</p>
+            </section>
+            <section>
+                <h2>Established</h2>
+                <hr>
+                <p>Since AC1723</p>
+            </section>
+            <section>
+                <h2>Transportation Options</h2>
+                <hr>
+                <ul>
+                    <li>Hight Speed Railway</li>
+                    <li>Railway</li>
+                    <li>MRT</li>
+                    <li>Bus</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Educational Institution</h2>
+                <hr>
+                <ul>
+                    <li>5 Universities</li>
+                    <li>26 High Schools</li>
+                    <li>42 Junior High Schools</li>
+                    <li>170 Elementary Schools </li>
+                </ul>
+            </section>
+        </div>
+        <div id="picture-column">
+            <figure>
+                <!-- <img src="images/hangbowetlands.webp" alt="Wetlands nearby ocean." loading="lazy" width="700" height="460"> -->
+                <img src="images/hangbowetlands.webp" alt="Wetlands nearby ocean." width="700" height="460">
+                <figcaption>Hangbo Wetlands</figcaption>
+            </figure>
+            <figure>
+                <img src="images/fangyuanlighthouse.webp" alt="A very tall lighthouse with black and white color." loading="lazy" width="700" height="500">
+                <figcaption>Fangyuan Lighthouse</figcaption>
+            </figure>
+            <figure>
+                <img src="images/greatbuddha.webp" alt="A building in buddha form." loading="lazy" width="700" height="500">
+                <figcaption>Great Buddha</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lukang-pottery.webp" alt="A wall covered with pottery-human faces." loading="lazy" width="700" height="500">
+                <figcaption>Lukang Pottery</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lungshangtemple.webp" alt="Traditional Chinese temple at night with beautiful lighting." loading="lazy" width="700" height="500">
+                <figcaption>Lungshang Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/taiwancraftsworkshop.webp" alt="A beautiful crafts container." loading="lazy" width="700" height="500">
+                <figcaption>Taiwan Crafts workshop</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>contact@chchamber</p>
+        <hr>
+        <div id="develop-info">
+            <p>Yun Liu</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification <span id="lastModified"></span></p>
+            <p>&copy; <span id="currentYear"></span> Changhua Chamber</p>
+        </div>
+    </footer>
+
+    <script src="scripts/base.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+</html>
