@@ -96,7 +96,7 @@ header a {
     color: white;
 }
 
-section:not(#dark-mode-switch, #weather){
+section:not(#dark-mode-switch, #information){
     margin: 50px;
     border: 1px solid var(--primary-color);
     border-radius: 1rem;

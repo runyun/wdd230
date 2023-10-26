@@ -11,5 +11,5 @@ function calculate_wind_chill (temperature, wind_speed) {
 }
 
 const temperature = document.getElementById('temperature').innerText;
-const wind_speed = document.getElementById('wind_speed').innerText;
-document.getElementById('wind_chill').innerText = calculate_wind_chill(temperature, wind_speed);
+const wind_speed = document.getElementById('wind-speed').innerText;
+document.getElementById('wind-chill').innerText = calculate_wind_chill(temperature, wind_speed);
