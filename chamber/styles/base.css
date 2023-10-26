@@ -121,6 +121,7 @@ iframe {
     width: 90%;
     justify-self: center;
     border-radius: 1rem;
+    border: 0;
 }
 
 footer {
