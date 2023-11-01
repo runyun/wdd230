@@ -1,0 +1,31 @@
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead tr th:first-child {
+    background-color: black;
+    color:white;
+}
+
+thead tr:nth-child(2) th:not(:first-child){
+    background-color: rgb(105, 101, 101);;
+    color:white;
+}
+
+th {
+    padding: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(237, 231, 231);
+}
+
+tbody td, tbody tr {
+    text-align: center;
+    border: 1px solid lightgray; 
+}
+
