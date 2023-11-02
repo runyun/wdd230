@@ -37,4 +37,11 @@
     .herolabel p {
         font-size: 2rem;
     }
+    #form-main {
+        display: block;
+        margin: 2rem auto;
+    }
+    form {
+        margin: 1rem;
+    } 
 }
