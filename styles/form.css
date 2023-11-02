@@ -1,0 +1,58 @@
+
+#form-main {
+    max-width: 800px;
+    margin: 2rem 1rem;
+}
+#form-main h2 {
+    display: block;
+}
+form input, form label {
+    display: block;
+}
+form input {
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 90%;
+    max-width: 400px;
+}
+form {
+    text-align: left;
+}
+form label {
+    margin-top: 2rem;
+}
+form input:required {
+    border-left: 6px solid red;
+}
+form input:required:valid {
+    border-left: 6px solid green;
+}
+fieldset {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+legend {
+    padding: 1rem;
+    margin-left: 1rem;
+}
+#rangevalue {
+    font-size: 2rem;
+}
+#submit-button{
+    margin-top: 3rem;
+    background-color: rgb(187, 72, 0);
+    color: white;
+}
+.required-star {
+    color: #9e0707;
+}
+
+
+/* THANKS */
+#thanks-main {
+    display: block;
+    max-width: 400px; 
+    margin: 1rem auto;
+    font-size: 2rem;
+}
