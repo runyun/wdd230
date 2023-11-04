@@ -33,4 +33,16 @@
     #discover-main {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* FORM */
+    #member-benefit {
+        display:initial;
+    }
+    #form-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    form button {
+        width:80%
+    }
 }

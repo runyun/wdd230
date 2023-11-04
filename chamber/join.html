@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Yun Liu">
+    <meta name="description" content="Application form for join the chamber of commerce">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <title>Chuanghua Chamber of Commerce</title>
+
+</head>
+<body>
+    <header>
+        <h1>Changhua Chamber of Commerce</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+        <section id="dark-mode-switch">
+            <h6>Dark Mode</h6>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </section>
+    </header>
+    <main id="form-main">
+        <h2>Join the membership</h2>
+        <div>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname">First name<span class="require-star">*</span></label>
+                    <input type="text" name="fname" id="fname" required>
+
+                    <label for="lname">Last name<span class="require-star">*</span></label>
+                    <input type="text" name="lname" id="lname" required>
+
+                    <label for="email">Email<span class="require-star">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="abc@gmail.com">
+
+                    <label for="phone">Phone<span class="require-star">*</span></label>
+                    <input type="tel" name="phone" id="phone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bussiness</legend>
+                    <label for="business-name">Business name<span class="require-star">*</span></label>
+                    <input type="text" name="business-name" id="lname" required>
+
+                    <label for="position">Position<span class="require-star">*</span></label>
+                    <input type="text" name="position" id="position" required pattern="[a-zA-Z\-\s]{7,}">
+
+                    <label id="business-description">Business description</label>
+                    <textarea name="business-description" id="business-description"></textarea>
+                </fieldset>
+
+                <div id="membership">
+                    <div>Membership</div>
+                    <label><input type="radio" name="membership" value="NP" class="sbs" checked="checked"> NP</label>
+                    <label><input type="radio" name="membership" value="bronze" class="sbs"> Bronze</label>
+                    <label><input type="radio" name="membership" value="silver" class="sbs"> Silver</label>
+                    <label><input type="radio" name="membership" value="gold" class="sbs"> Gold</label>
+                </div>
+
+                <button type="submit">Join now!</button>
+
+                <input type="hidden" id="timestamp" name="timestamp"></input>
+            </form>
+        </div> 
+        <div id="member-benefit">
+            <section>
+                <h2>PN</h2>
+                <hr>
+                <ul>
+                    <li>Event reminder</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Bronze</h2>
+                <hr>
+                <ul>
+                    <li>Event reminder</li>
+                    <li>Event discounts</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Silver</h2>
+                <hr>
+                <ul>
+                    <li>Event reminder</li>
+                    <li>Event discounts</li>
+                    <li>Business training</li>
+                    <li>Home page spotlight</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Gold</h2>
+                <hr>
+                <ul>
+                    <li>Event reminder</li>
+                    <li>Event discounts</li>
+                    <li>Business training</li>
+                    <li>Home page spotlight </li>
+                    <li>Latest intelligence</li>
+                    <li>Business partner matching</li>
+                </ul>
+            </section>
+        </div> 
+    </main>
+    <footer>
+        <p>contact@chchamber</p>
+        <hr>
+        <div id="develop-info">
+            <p>Yun Liu</p>
+            <p>WDD 230 Project</p>
+            <p>Last Modification <span id="lastModified"></span></p>
+            <p>&copy; <span id="currentYear"></span> Changhua Chamber</p>
+        </div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>
