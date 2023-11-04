@@ -60,12 +60,12 @@
                 <fieldset>
                     <legend>Bussiness</legend>
                     <label for="business-name">Business name<span class="require-star">*</span></label>
-                    <input type="text" name="business-name" id="lname" required>
+                    <input type="text" name="business-name" id="business-name" required>
 
                     <label for="position">Position<span class="require-star">*</span></label>
                     <input type="text" name="position" id="position" required pattern="[a-zA-Z\-\s]{7,}">
 
-                    <label id="business-description">Business description</label>
+                    <label for="business-description">Business description</label>
                     <textarea name="business-description" id="business-description"></textarea>
                 </fieldset>
 
@@ -79,7 +79,7 @@
 
                 <button type="submit">Join now!</button>
 
-                <input type="hidden" id="timestamp" name="timestamp"></input>
+                <input type="hidden" id="timestamp" name="timestamp">
             </form>
         </div> 
         <div id="member-benefit">

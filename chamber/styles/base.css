@@ -292,7 +292,7 @@ form input:required:valid {
 }
 
 .require-star {
-    color: red;
+    color: #a10606;
 }
 
 form button {
