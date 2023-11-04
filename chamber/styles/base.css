@@ -305,11 +305,13 @@ form button {
 }
 
 form fieldset {
-    margin: 4rem auto;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
 }
 
+form fieldset:not(:first-child) {
+    margin: 4rem auto;
+}
 form legend {
     margin-left: 2rem;
     padding: 0 1rem;
@@ -329,8 +331,8 @@ form legend {
     text-align: center;
 }
 
-#member-benefit {
-    display: none;
+#member-benefit section{
+    margin: 1rem;
 }
 #member-benefit ul{
     list-style: none;
