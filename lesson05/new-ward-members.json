@@ -1,0 +1,18 @@
+{
+    "familyName": "Liu",
+    "movedInDate": "2020-01-01",
+    "peopleAmount": 2,
+    "bishopricVisited": true,
+    "familyMembers": [
+        {
+            "name": "Yun Liu",
+            "gender": "F",
+            "birthdate": "1999-02-02"
+        },
+        {
+            "name": "Hui Liu",
+            "gender": "M",
+            "birthdate": "1990-03-04"
+        }
+    ]
+}
