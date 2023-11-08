@@ -1,0 +1,32 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+body {
+    text-align: center;
+    font-family: 'Agbalumo', cursive;
+    background-color: #f5f0f1;
+}
+
+div section {
+    background-color: #154760;
+    color: white;
+    margin: .5rem;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cards section:last-child {
+    background-color: #fffb8a;
+    color: black;
+}
+
+#cards img {
+    margin-bottom: 1rem; 
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    height: auto;
+}
+
+
