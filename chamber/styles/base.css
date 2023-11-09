@@ -15,7 +15,16 @@ body {
     margin: 0 auto;
     padding: 1rem;
     font-family: var(--paragraph-font);
+}
+
+body.light {
     background-color: var(--backround-color);
+    color: black;
+}
+
+body.dark {
+    background-color: #30343F;
+    color: white;
 }
 
 header {
@@ -131,6 +140,7 @@ footer {
     padding: 2rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    margin-top: 5rem;
 }
 
 #develop-info {
@@ -362,5 +372,51 @@ form legend {
     font-size: 4rem;
     text-align: center;
 }
+/* END */
 
+.grid#companies_display{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	align-items: center; 
+}
+
+.grid#companies_display img{
+    width: 50%;
+    height: auto;
+}
+
+.grid#companies_display section{
+    margin: 1rem;
+}
+
+.list#companies_display section{
+    display: block;
+    margin: 0;
+}
+.list#companies_display.light section:nth-child(even){
+    background-color: #e6d9f3;
+    color: black;
+}
+.list#companies_display.dark section:nth-child(even){
+    background-color: #706679;
+    color:white;
+}
+
+.list#companies_display img {
+    display: none;
+}
+#display-toggle span {
+    font-size: xx-large;
+}
+#display-toggle button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: 10px;
+    padding: .3rem 2rem;
+}
+
+#companies_display a{
+    color: inherit;
+}
 

@@ -45,4 +45,9 @@
     form button {
         width:80%
     }
+
+    .list#companies_display section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

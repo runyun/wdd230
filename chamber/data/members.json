@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "彰化縣私立宥安心居家長照機構",
+            "address":"彰化縣彰化市福安里華山路37號9樓之5C",
+            "phone":"728-2777",
+            "url":"https://www.facebook.com/profile.php?id=100064142856198",
+            "image":"https://scontent.frmq2-2.fna.fbcdn.net/v/t39.30808-6/305035040_446770344137724_891990640870447645_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iIuYYh3zmJ4AX8loBJx&_nc_ht=scontent.frmq2-2.fna&oh=00_AfDMxPZix3MHksxRcKAGhNm4Nj8M82eunVXC2RcmgebdGw&oe=6551927F",
+            "membership":"Gold"
+        },
+        {
+            "name": "彰化縣私立格林幼兒園",
+            "address":"彰化縣彰化市福山里山中街1之5號",
+            "phone":"7389952",
+            "url":"https://www.facebook.com/people/彰化格林幼兒園/100057522705108/",
+            "image":"https://scontent.frmq2-2.fna.fbcdn.net/v/t39.30808-6/271175059_10159187711672012_5322166698091957800_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=P1ke6Sjae3oAX_jsD3h&_nc_ht=scontent.frmq2-2.fna&oh=00_AfBA4TfZ9aHwDoDBi68cSKT-Qu8Yf35pU2SxdCGwoyYw6g&oe=65508180",
+            "membership":"Bronze"
+        },
+        {
+            "name": "豚將拉麵-彰化師大店",
+            "address":"彰化縣彰化市和調里實踐路62號",
+            "phone":"7249725",
+            "url":"https://www.facebook.com/豚將拉麵-彰化師大店-102778184552856/",
+            "image":"https://scontent.frmq2-2.fna.fbcdn.net/v/t39.30808-6/305964515_484517320351889_8071175008583491626_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XNSug_LwJIAAX8-Hy73&_nc_oc=AQl9PBdr3tEX7sWBNwFCk9CnF9GeKqHYCd4XyRYAdEvMC68ZaV4-IFZHmGrkIXWBRmM&_nc_ht=scontent.frmq2-2.fna&oh=00_AfB--asJ06qG3C3z4kcqpZCK2pwcSgfnVAf0dXmlQOJS1A&oe=655165CB",
+            "membership":"PN"
+        },
+        {
+            "name": "喜盈服裝有限公司(巧玲瓏服飾)",
+            "address":"彰化縣彰化市永華街20號1樓",
+            "phone":"7282727",
+            "url":": https://www.cll-fashion.com/",
+            "image":"https://cms.cdn.91app.com/images/original/41048/cc68b708-2a82-4069-b516-5817684efbff-1623924009-ix77ofo6dc_d.png",
+            "membership":"Gold"
+        },
+        {
+            "name": "羿晨機械股份有限公司",
+            "address":"彰化縣彰化市寶聖路112號",
+            "phone":"7221234",
+            "url":": http://www.yiehchen.com",
+            "image":"https://cdn.ready-market.com/101/9436af47//Templates/pic/logo.png?v=4880236f",
+            "membership":"Silver"
+        },
+        {
+            "name": "臻禾興業有限公司",
+            "address":"彰化縣彰化市聖安路209號",
+            "phone":"7373688",
+            "url":"http://www.trimmer.com.tw",
+            "image":"https://www.trimmer.com.tw/user/trimmer2/images/logo.png",
+            "membership":"Silver"
+        },
+        {
+            "name": "彰化汽車客運股份有限公司",
+            "address":"彰化縣彰化市建國南路177號",
+            "phone":"7225111",
+            "url":"http://www.changhuabus.com.tw/",
+            "image":"https://www.changhuabus.com.tw/upload/banner/images/220180411155654.PNG",
+            "membership":"Gold"
+        }
+    ]
+}

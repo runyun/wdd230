@@ -11,14 +11,15 @@ menu.addEventListener('click', ()=>{
 // DARK MODE SWITCH
 const switchContainer = document.querySelector(".switch");
 const switcher = document.querySelector(".switch input");
+
 const body = document.querySelector("body");
 
 switchContainer.addEventListener("click", () => {
     if (switcher.checked){
-        body.style.backgroundColor = '#30343F';
-        body.style.color ='white';
+        body.classList.remove('light');
+        body.classList.add('dark');
     }else{
-        body.style.backgroundColor = 'var(--backround-color)';
-        body.style.color ='black';
+        body.classList.remove('dark');
+        body.classList.add('light');
     }
 });
