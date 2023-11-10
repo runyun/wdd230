@@ -97,6 +97,10 @@
                 {
                     "url": "lesson08/form-start/index.html",
                     "title": "HTML Form"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
                 }
             ] 
         },
