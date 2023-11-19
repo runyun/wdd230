@@ -105,7 +105,7 @@ function renderForeCast(data) {
     const imgalt = `${data.weather[0].description}`;
 
     const section = document.createElement('section');
-    const week = document.createElement('p');
+    const week = document.createElement('h3');
     const weatherIcon = document.createElement('img');
     const temp = document.createElement('p');
 
