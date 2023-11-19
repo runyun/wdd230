@@ -3,6 +3,21 @@
     #location-info {
         grid-template-columns: 1fr 300px;
     }
-    
+
+    #weather {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    #weather section {
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
 }
 

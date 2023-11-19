@@ -6,7 +6,6 @@ const captionDesc = document.querySelector('#weather-descript');
 const key = '98185f587a5e31720e806dd1a3bbbe98';
 const lat = 24.07;
 const lon = 120.56;
-// const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
 
 async function apiFetch() {

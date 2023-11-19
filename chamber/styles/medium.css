@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 720px){
-    header {
+    #navigation {
         grid-template-columns: 1fr 1fr 100px;
         align-items: center;
     }

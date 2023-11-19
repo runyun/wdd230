@@ -27,21 +27,27 @@
 </head>
 <body class="light">
     <header>
-        <h1>Changhua Chamber of Commerce</h1>
-        <a id="menu" href="#"></a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-        </nav>
-        <section id="dark-mode-switch">
-            <h6>Dark Mode</h6>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </section>
+        <div id="navigation">
+            <h1>Changhua Chamber of Commerce</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+            <section id="dark-mode-switch">
+                <h6>Dark Mode</h6>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </section>
+        </div>
+        <div id="banner" class="close">
+            <p>Join us of the chamber of commerce meet and greet on this Wednesday at 7:00 p.m.</p>
+            <div id="close-banner">ⓧ</div>
+        </div> 
     </header>
     <main>
         <div id="hero">
@@ -91,13 +97,18 @@
         <hr>
         <div id="location-info">
             <iframe title="Google map shows the location of Zhuanghua City" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d124272.10871047403!2d120.6021623669942!3d24.016000730095964!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1695943354859!5m2!1szh-TW!2stw" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <section id="information">
-                <h2>Information</h2>
-                <hr>
-                <p>Current Temperature(°F): <span id="temperature">20</span></p>
-                <p>Wind Speed(mph): <span id="wind-speed">4</span></p>
-                <p>Wind Chill(°F): <span id="wind-chill"></span></p>
-            </section>
+            <div id="weather-container">
+                <h2>Weather</h2>
+                <div id="weather">
+                    <section id="today"> 
+                        <p>Today</p>
+                        <img id="weather-icon" src="" alt="">
+                        <p><span id="current-temp"></span>℃</p>
+                        <p id="weather-descript"></p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                    </section>
+                </div>  
+            </div>
         </div>
     </main>
     <footer>
@@ -113,6 +124,7 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/base.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
