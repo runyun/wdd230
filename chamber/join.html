@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,32 +12,33 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <meta property="og:title" content="Join Application - Chuanghua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tourism.chcg.gov.tw/upload/CuteSoft/chcgMap.png">
+    <meta property="og:url" content="https://runyun.github.io/wdd230/chamber/join.html">
+
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap" rel="stylesheet">
     
-    <title>Join Application</title>
+    <title>Join Application - Chuanghua Chamber of Commerce</title>
 
 </head>
 <body>
     <header>
         <div id="navigation">
             <h1>Changhua Chamber of Commerce</h1>
-            <a id="menu" href="#"></a>
+            <button id="menu">≡</button>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="#">Join</a>
             </nav>
-            <section id="dark-mode-switch">
-                <h6>Dark Mode</h6>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </section>
+            <div id="dark-mode-switch">
+                <button>🌙</button>
+            </div>
         </div>
     </header>
     <main id="form-main">
@@ -53,10 +54,10 @@
                     <input type="text" name="lname" id="lname" required>
 
                     <label for="email">Email<span class="require-star">*</span></label>
-                    <input type="email" name="email" id="email" required placeholder="abc@gmail.com">
+                    <input type="email" name="email" id="email" required placeholder="abc@gmail.com" autocomplete="on">
 
                     <label for="phone">Phone<span class="require-star">*</span></label>
-                    <input type="tel" name="phone" id="phone" required>
+                    <input type="tel" name="phone" id="phone" required autocomplete="on">
                 </fieldset>
 
                 <fieldset>
@@ -79,7 +80,7 @@
                     <label><input type="radio" name="membership" value="gold" class="sbs"> Gold</label>
                 </div>
 
-                <button type="submit">Join now!</button>
+                <button type="submit">Joining now!</button>
 
                 <input type="hidden" id="timestamp" name="timestamp">
             </form>
