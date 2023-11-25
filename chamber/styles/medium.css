@@ -50,4 +50,8 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    figure:hover {
+        transform: rotate(.01turn);
+    }
 }

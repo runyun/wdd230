@@ -205,7 +205,7 @@ figure {
 }
 
 figure:hover {
-    transform: rotate(.01turn);
+    transform: none;
 }
 
 figure img {

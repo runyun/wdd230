@@ -42,7 +42,7 @@ function displayData(companies){
 		link.href = company.url;
 		heading.textContent = company.name;
 		image.src = company.image;
-		image.maxwidth = 200;
+		image.width = 200;
 		image.height = 'auto';
 		tel.textContent = `☎︎ ${company.phone}`;
 		address.textContent = `⚑ ${company.address}`;
