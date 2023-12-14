@@ -1,0 +1,389 @@
+
+:root {
+    --background-color:#E4EBFD; 
+    --primary-color: #f57600;
+    --secondary-color:#f2c200;
+
+    --heading-font: 'Caveat', cursive;
+    --paragraph-font: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    
+    font-family: var(--paragraph-font);
+}
+
+main {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+
+li{
+    padding: 5px;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    grid-column: 1/3;
+    display: block;
+}
+nav.show a{
+    display: block;
+    padding: 1rem
+}
+
+nav a, footer a{
+    text-decoration: none;
+    color: #23237f;
+}
+
+nav a:hover, footer a:hover {
+    text-shadow: 2px 2px 2px white;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #f2c200;
+    padding: 1rem;
+}
+
+button {
+    background-color: #f57600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img:not(#hero img){
+    border-radius: 5px;
+}
+
+section:not(#weather section) {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header p, footer p span:nth-child(2) {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+#reminder {
+    background-color: var(--primary-color);
+    padding: 0.2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+#reminder p {
+    text-align: center;
+}
+
+#reminder button {
+    width:40px;
+    border: none;
+    position: relative;
+    top: -10px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero+h2 {
+    margin-top: 5rem;
+    text-decoration: underline;
+}
+
+
+#hero h1 {
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    text-shadow: 1px 2px 1rem white;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px white;
+}
+
+#hero button {
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    width: 60%;
+    margin: auto;
+    box-shadow: 1px 2px 1rem white;
+}
+
+#rental-spotlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    margin: 2rem;
+}
+
+#rental-spotlight section {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+#rental-spotlight section div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:1rem;
+}
+
+.infoContainer img{
+    width:40px;
+}
+
+.infoContainer p img{
+    width:20px;
+}
+
+.infoContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather {
+    text-align: center;
+}
+
+#weather>p {
+    font-size: xx-large;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#weather section {
+    margin: 3rem 0 0;
+}
+
+#weather h3 {
+    margin-bottom: 5px;
+}
+
+#weather section>p img {
+    width: 20px;
+}
+
+#local-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+}
+
+ iframe {
+    width: 90%;
+    justify-self: center;
+}
+
+/* PRICING */
+table {
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+th:not(tr:nth-child(1) th:nth-child(1)){
+    padding: 3px;
+    background-color: var(--primary-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(237, 231, 231);
+}
+
+thead tr:not(:first-child) th, tbody td, tbody tr {
+    text-align: center;
+    border: 1px solid lightgray; 
+}
+
+thead tr:first-child th:nth-child(2) {
+    border-top-left-radius: 1rem;
+}
+
+thead tr:first-child th:nth-child(3) {
+    border-top-right-radius: 1rem;
+}
+
+/* FORM */
+form {
+    font-size: 1rem;
+    text-align: initial;
+}
+form label { 
+    margin-top: 2rem;
+    display: block;
+}
+form input, textarea, select {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input:required {
+    border-left: 5px solid red;
+}
+
+form input:required:valid {
+    border-left: 5px solid green;
+}
+
+.require-star {
+    color:#790404;
+}
+
+form button[type="submit"] {
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    margin: 5rem auto;
+    width:90%;
+}
+
+form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+form fieldset:not(:first-child) {
+    margin: 4rem auto;
+}
+form legend {
+    margin-left: 2rem;
+    padding: 0 1rem;
+}
+
+.rentalItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rentalItem button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+}
+
+#addItem {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#aggrement {
+    text-align: initial;
+    font-size: large;
+}
+
+
+#aggrement h3{
+    text-decoration: underline;
+}
+
+#reservation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+#reservation h1{
+    grid-column: 1/2;
+}
+
+#checkAgree {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+#checkAgree input{
+    padding: 1rem;
+    position: relative;
+    top: 10px;
+}
+
+#contactMain {
+    margin: 1rem;
+}
+
+#contactMain li {
+    list-style: none;
+}
+
+#contactMain ul {
+    padding: 0;
+}
+
+#contactMain button {
+    max-width: 300px;
+    margin: auto;
+}
+
+#contactMain h2 {
+    margin-top: 5rem;
+    text-align: left;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+optgroup {
+    font-size: 2rem;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Contact us</title>
+
+    <meta name="author" content="Yun Liu">
+    <meta name="description" content="Provides various way for visitors to contact the company.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Isla_cozumel_April17-2001-crop.jpg/800px-Isla_cozumel_April17-2001-crop.jpg">
+    <meta property="og:url" content="https://runyun.github.io/wdd230/scoots/index.html">
+</head>
+<body>
+    <header>
+        <p>~Scoots~</p>
+        <button id="menu">≡</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rental.html">Rentals</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main id="contactMain">
+        <h1>Contact Us</h1>
+        <ul>
+            <li>Tel: +52 987 116 6010</li>
+            <li>Mail: service@scoots</li>
+        </ul>
+        <iframe title="Google map shows the location of the island of Cozumel off the coast of Mexico in the western Caribbean Sea." src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d20386.300813335572!2d-86.96409888314723!3d20.490567172325353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d20.476478699999998!2d-86.97402!4m3!3m2!1d20.5096104!2d-86.9483121!5e0!3m2!1szh-TW!2stw!4v1702338047668!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Fill form and send comments</h2>
+        <form method="get" action="contacted.html">
+
+            <label for="fname">First name<span class="require-star">*</span></label>
+            <input type="text" name="fname" id="fname" required>
+
+            <label for="lname">Last name<span class="require-star">*</span></label>
+            <input type="text" name="lname" id="lname" required>
+
+            <label for="email">Email<span class="require-star">*</span></label>
+            <input type="email" name="email" id="email" required placeholder="abc@gmail.com" autocomplete="on">
+
+            <label for="phone">Phone<span class="require-star">*</span></label>
+            <input type="tel" name="phone" id="phone" required autocomplete="on">
+
+            <label for="comment">Comments<span class="require-star">*</span></label>
+            <textarea name="comment" id="comment" required></textarea>
+            <label></label>
+            <button type="submit">Send comments</button>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+        </form> 
+    </main>
+    <footer>
+        <div>
+            <a href="contact.html">Contact Us</a>
+            <a href="attribution.html">Attribute Page</a>
+            <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">Social Media</a>
+        </div>
+        <p>WDD230 Project &copy; <span id="copy-year"></span> <span>~Scoots~</span></p>
+    </footer>
+    <script src="scripts/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Reservation</title>
+
+    <meta name="author" content="Yun Liu">
+    <meta name="description" content="Book transportation to travel on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="~Scoots~">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Isla_cozumel_April17-2001-crop.jpg/800px-Isla_cozumel_April17-2001-crop.jpg">
+    <meta property="og:url" content="https://runyun.github.io/wdd230/scoots/index.html">
+</head>
+<body>
+    <header>
+        <p>~Scoots~</p>
+        <button id="menu">≡</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rental.html">Rentals</a>
+            <a href="#">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="reservation">
+        <h1>Reservation</h1>
+        <form method="get" action="reserved.html">
+            <fieldset>
+                <legend>Rental Transportation</legend>
+                <label for="theDate">Date<span class="require-star">*</span></label>
+                <input type="date" name="theDate" id="theDate" required>
+
+                <label for="period">Period<span class="require-star">*</span></label>
+                <input type="text" name="period" id="period" required>
+
+                <p>Rental List</p>
+                <button id="addItem" type="button">⨁ Add Item</button> 
+                <div id="rentalList"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fname">First name<span class="require-star">*</span></label>
+                <input type="text" name="fname" id="fname" required>
+
+                <label for="lname">Last name<span class="require-star">*</span></label>
+                <input type="text" name="lname" id="lname" required>
+
+                <label for="email">Email<span class="require-star">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="abc@gmail.com" autocomplete="on">
+
+                <label for="phone">Phone<span class="require-star">*</span></label>
+                <input type="tel" name="phone" id="phone" required autocomplete="on">
+
+                <label for="country">Country<span class="require-star">*</span></label>
+                <input type="text" name="country" id="country" required autocomplete="on">
+
+                <label for="cruiseLine">Cruise Line</label>
+                <input type="text" name="cruiseLine" id="cruiseLine">
+            
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment" ></textarea>
+            </fieldset>
+            <div id="checkAgree">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Read and agree the Aggrements<span class="require-star">*</span></label>
+            </div>
+
+
+            <button type="submit">Send Reservation</button>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+        </form> 
+        <div id="aggrement">
+            <h2>Services and Aggrements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="contact.html">Contact Us</a>
+            <a href="attribution.html">Attribute Page</a>
+            <a href="https://en.wikipedia.org/wiki/Cozumel" target="_blank">Social Media</a>
+        </div>
+        <p>WDD230 Project &copy; <span id="copy-year"></span> <span>~Scoots~</span></p>
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/form.js"></script>
+    </body>
+</html>

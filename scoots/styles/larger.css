@@ -1,0 +1,56 @@
+
+@media screen and (min-width: 900px){
+    #hero {
+        grid-template-columns: 1fr 3fr 1fr; 
+    }
+    #hero picture {
+        grid-column: 1/4;
+        grid-row: 1/5;
+        z-index: -1;
+    }
+
+    #hero h1 {
+        font-size: 5rem;
+    }
+
+    #hero section {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #hero button {
+        font-size: 2.5rem;
+        padding: 2rem;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #rental-spotlight {
+        grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    }
+
+    #local-info {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #weather {
+        text-align: left;
+    }
+
+    .infoContainer {
+        display: initial;
+    }
+
+    #reservation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #reservation h1{
+        grid-column: 1/3;
+    }
+
+    #addItem {
+        width:30%;
+    }
+
+}

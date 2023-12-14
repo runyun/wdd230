@@ -1,0 +1,117 @@
+{
+    "transportations": [
+        {
+            "type": "Scooter",
+            "catolog": [
+                {
+                    "name": "Honda Metropolitan",
+                    "imageurl": "https://wieck-honda-production.s3.amazonaws.com/photos/594eb8fac157f3e333abb9f8516cba039eb93fc1/preview-928x522.jpg",
+                    "capacity": 1,
+                    "price": {
+                        "reservation": {
+                            "half_day": 20,
+                            "full_day": 30
+                        },
+                        "walk_in": {
+                            "half_day": 25,
+                            "full_day": 35
+                        }
+                    },
+                    "cc": 49
+                },
+                {
+                    "name": "Honda Dio",
+                    "imageurl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/152781/dio-125-right-front-three-quarter-7.png?isig=0&q=80",
+                    "capacity": 2,
+                    "price": {
+                        "reservation": {
+                            "half_day": 30,
+                            "full_day": 40
+                        },
+                        "walk_in": {
+                            "half_day": 35,
+                            "full_day": 45
+                        }
+                    },
+                    "cc": 110
+                },
+                {
+                    "name": "Honda PCX150",
+                    "imageurl": "https://powersports.honda.com/motorcycle/scooter/pcx/-/media/products/family/pcx/trims/trim-main/pcx/2023/2023-pcx-matte_brown_metallic-650x380.png",
+                    "capacity": 2,
+                    "price": {
+                        "reservation": {
+                            "half_day": 40,
+                            "full_day": 50
+                        },
+                        "walk_in": {
+                            "half_day": 45,
+                            "full_day": 55
+                        }
+                    },
+                    "cc": 149
+                }
+            ]
+        },
+        {
+            "type": "ATV",
+            "catolog": [
+                {
+                    "name": "Honda Pioneer",
+                    "imageurl": "https://wieck-honda-production.s3.amazonaws.com/photos/2b9464123cfdff06abe60247da0074366bc732e9/preview-928x522.jpg",
+                    "capacity": 4,
+                    "price": {
+                        "reservation": {
+                            "half_day": 50,
+                            "full_day": 70
+                        },
+                        "walk_in": {
+                            "half_day": 60,
+                            "full_day": 80 
+                        }
+                    },
+                    "cc": 1000
+                }
+            ]
+        },
+        {
+            "type": "Jeep",
+            "catolog": [
+                {
+                    "name": "Wrangler - 2 door",
+                    "imageurl": "https://images.carexpert.com.au/resize/3000/-/app/uploads/2021/07/jeep-wrangler-rubicon-sarge-green.png",
+                    "capacity": 4,
+                    "price": {
+                        "reservation": {
+                            "half_day": 60,
+                            "full_day": 85
+                        },
+                        "walk_in": {
+                            "half_day": 70,
+                            "full_day": 90 
+                        }
+                    },
+                    "manuel": true,
+                    "A/C": false
+                },
+                {
+                    "name": "Wrangler - 4 door",
+                    "imageurl": "https://www.cars.com/i/large/in/v2/stock_photos/a6c72cc9-17ee-4898-9807-89fc3dafc99d/de81fd81-2599-42be-a6bb-fc739155a5aa.png",
+                    "capacity": 5,
+                    "price": {
+                        "reservation": {
+                            "half_day": 70,
+                            "full_day": 100
+                        },
+                        "walk_in": {
+                            "half_day": 85,
+                            "full_day": 125 
+                        }
+                    },
+                    "manuel": true,
+                    "A/C": true
+                }
+            ]
+        }
+    ]
+}

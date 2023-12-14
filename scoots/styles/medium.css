@@ -1,0 +1,72 @@
+
+@media screen and (min-width: 580px){
+    main {
+        margin: 1rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 100px 1fr 50px; 
+    }
+
+    #hero{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    
+    #hero picture {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        z-index: -1;
+    }
+
+    #hero h1 {
+        font-size: 5rem;
+    }
+
+    #hero section {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #hero button {
+        font-size: 2.5rem;
+        padding: 1rem;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 2rem;
+    }
+
+    #weather section {
+        margin: 2rem;
+    }
+    
+    .infoContainer {
+        gap: 3rem;
+    }
+
+    #local-info {
+        margin: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap:1rem;   
+        margin: 1rem;
+    }
+
+    th:not(tr:nth-child(1) th:nth-child(1)){
+        padding: 1rem;
+    }
+
+    table img {
+        max-width: 400px;
+    }
+
+}
